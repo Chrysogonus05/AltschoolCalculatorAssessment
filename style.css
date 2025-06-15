@@ -1,4 +1,4 @@
-/* ===== GLOBAL STYLES ===== */
+/* GLOBAL STYLES */
 body {
     /* Light gray background to make the calculator pop visually */
     background-color: #f0f0f0;
@@ -15,7 +15,7 @@ body {
     margin: 0;
   }
   
-  /* ===== CALCULATOR CONTAINER ===== */
+  /* CALCULATOR CONTAINER */
   .calculator {
     /* Dark background for contrast */
     background-color: #1e1e2f;
