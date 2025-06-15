@@ -1,0 +1,131 @@
+/* ===== GLOBAL STYLES ===== */
+body {
+    /* Light gray background to make the calculator pop visually */
+    background-color: #f0f0f0;
+  
+    /* Flexbox for centering calculator in the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* Take full height of the screen */
+    height: 100vh;
+  
+    /* Remove default margin to avoid scrollbars */
+    margin: 0;
+  }
+  
+  /* ===== CALCULATOR CONTAINER ===== */
+  .calculator {
+    /* Dark background for contrast */
+    background-color: #1e1e2f;
+  
+    /* Rounded corners for modern look */
+    border-radius: 12px;
+  
+    /* Inner spacing */
+    padding: 20px;
+  
+    /* Fixed width — responsive enough for basic UI */
+    width: 260px;
+  
+    /* Drop shadow for soft elevation */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  
+  /*  DISPLAY SCREEN  */
+  .display {
+    /* Blue screen area  */
+    background-color: #2e3b72;
+  
+    /* Text color (not active yet but can hold input/output) */
+    color: white; 
+    /* Centered text for better readability */
+    text-align: right;
+    /* Padding for spacing around text */
+    padding: 10px;
+    max-height: 100%;
+  
+    /* Fixed height */
+    height: 55px;
+  
+    /* Rounded for consistency */
+    border-radius: 5px;
+  
+    /* Space below the display before buttons start */
+    margin-bottom: 25px;
+  }
+  
+
+  .history {
+    background: #222;
+    color: #ccc;
+    padding: 1rem;
+    height: 120px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+    border-top: 2px solid #444;
+  }
+  .history div {
+    margin-bottom: 0.5rem;
+  }
+  
+  /*  BUTTON GRID  */
+  .buttons {
+    /* 4 equal columns for number/operator layout */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  
+    /* Gutter between buttons */
+    gap: 12px;
+  }
+  
+  /*  GENERAL BUTTON STYLES  */
+  button {
+    /* Uniform button size */
+    height: 50px;
+  
+    /* Readable button text */
+    font-size: 18px;
+  
+    /* No borders for a clean flat design */
+    border: none;
+  
+    /* Rounded edges match the overall style */
+    border-radius: 12px;
+  
+    /* Cursor changes on hover */
+    cursor: pointer;
+  
+    /* Smooth hover transition */
+    transition: background 0.2s;
+  }
+  
+  /* STYLES BY TYPE  */
+  .num {
+    /* Dark purple for numbers */
+    background-color: #353547;
+    color: white;
+  }
+  
+  .operator {
+    /* Bright orange for math operators */
+    background-color: #ffac33;
+    color: white;
+  }
+  
+  .equal {
+    /* Light gray for the equal button */
+    background-color: #ccc;
+    color: #333;
+  
+    /* Spans 1 column only (could be adjusted if needed) */
+    grid-column: span 1;
+  }
+  
+  /* HOVER EFFECT */
+  button:hover {
+    /* Slight opacity for visual feedback */
+    opacity: 0.85;
+  }
+  
